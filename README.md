@@ -8,7 +8,7 @@ This code implements sequential pattern mining using a breadth-frist-search algo
 `./gsp_cpu <frequency> <input file> <Dumping results (yes = 1, No = 0)> <Allow gap between itemsets (yes = 1, No = 0)>`
 
 
-You can set "Allow gap between itemsets" to "0" in order to mine the consequtive frequent itemset. 
+You can set "Allow gap between itemsets" to "0" in order to mine the frequent consequtive itemsets. 
 
 
 

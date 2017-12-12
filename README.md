@@ -6,6 +6,7 @@ This code implements sequential pattern mining using a breadth-frist-search algo
 ## Usage:
 
 `1. make`
+
 `2. ./gsp_cpu <frequency> <input file> <Dumping results (yes = 1, No = 0)> <Allow gap between itemsets (yes = 1, No = 0)>`
 
 

@@ -5,7 +5,8 @@ This code implements sequential pattern mining using a breadth-frist-search algo
 
 ## Usage:
 
-`./gsp_cpu <frequency> <input file> <Dumping results (yes = 1, No = 0)> <Allow gap between itemsets (yes = 1, No = 0)>`
+`1. make`
+`2. ./gsp_cpu <frequency> <input file> <Dumping results (yes = 1, No = 0)> <Allow gap between itemsets (yes = 1, No = 0)>`
 
 
 You can set "Allow gap between itemsets" to "0" in order to mine the frequent consequtive itemsets. 
@@ -14,9 +15,11 @@ You can set "Allow gap between itemsets" to "0" in order to mine the frequent co
 
 ## Input format:
 
--1 is a delimiter between itemsets 
+-1 is a delimiter between itemsets.
 
--2 is a delimiter betweeen sequences 
+-2 is a delimiter betweeen sequences.
+
+-2 should be added to the last line.
 
 **Sample input file**
 

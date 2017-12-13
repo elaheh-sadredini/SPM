@@ -28,11 +28,11 @@ void generateThreeAndMoreFreqSeq()
 
 	while(previousFrequentSequences != NULL)
 	{
-        if(out_write){
-			char buffer[50];
-			//snprintf(buffer, sizeof(buffer), "intermidiate-size%d.txt", patternLengthIterator+3);
-			candFile = fopen(buffer, "w");
-		}
+//        if(out_write){
+//        char buffer[50];
+//			snprintf(buffer, sizeof(buffer), "intermidiate-size%d.txt", patternLengthIterator+3);
+//			candFile = fopen(buffer, "w");
+//		}
         
 		numberOfCurrentFrequentSequence = numberOfNextFrequentSequence;
 		struct itemsets** nextFrequentSequences = (struct itemsets**)malloc(maxNumberOfFrequentSequenceForEachLength*sizeof(struct itemsets*));
@@ -61,9 +61,9 @@ void generateThreeAndMoreFreqSeq()
 					joinedCandidate = candidateJoin(&previousFrequentSequences[i], previousFrequentSequences[j]);
 
 					if (joinedCandidate != NULL) {  //joinedCandidate is NULL if two candidates cannot get joined, otherwise joined candidate
-					if(out_write){
-						fprintf(candFile, "%s\n", sequenceSignature(joinedCandidate, patternLengthIterator+3));
-					}
+//					if(out_write){
+//						fprintf(candFile, "%s\n", sequenceSignature(joinedCandidate, patternLengthIterator+3));
+//					}
 						if (pruning(joinedCandidate, patternLengthIterator+3) == false) {
 							if(searchCandidateInSequences(joinedCandidate) >= frequencyNum) {
 
@@ -101,9 +101,9 @@ void generateThreeAndMoreFreqSeq()
 			previousFrequentSequences = nextFrequentSequences;
 
 		patternLengthIterator++;
-       if(out_write){
-	   fclose(candFile);
-	   }
+//       if(out_write){
+//	   fclose(candFile);
+//	   }
 	}
 }
 

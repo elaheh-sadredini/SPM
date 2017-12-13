@@ -38,13 +38,12 @@ int main(int argc, char** argv) {
 	gettimeofday(&end, NULL );
 	double delta = ((end.tv_sec - start.tv_sec) * 1000000u + end.tv_usec
 			- start.tv_usec) / 1.e6;
-	printf("\n Finished & STATISTICS \n");		
 	printf("\nExecution Total time ~ %f s\n", delta);
 	if(out_write){
 		fclose(outFile);
 	}
 
-	printf("\n All frequent sequences are saved in output file.\n");
+	printf("\nAll frequent sequences are saved in finalFreqCand.txt\n\n");
 	return 0;
 }
 

@@ -114,7 +114,7 @@ void generateTwoLenghtFreqSeq()
 		}
 	}
 
-	//fprintf(outFile, "%d\n", numberOfTowLengthSeeds);
+	fprintf(outFile, "%d\n", numberOfTowLengthSeeds);
 
 	twoLengthSeeds =(struct itemsets**) malloc(numberOfTowLengthSeeds*sizeof(struct itemsets*));
 	assert(twoLengthSeeds!=NULL && "unsuccessful memory allocation");
@@ -143,7 +143,7 @@ void generateTwoLenghtFreqSeq()
 				k++;
 			}
 			//printFrequentCandidateHashTable();
-    if(out_write){
-	fclose(candFile);
-	}
+    //if(out_write){
+	//fclose(candFile);
+	//}
 }

@@ -2,3 +2,5 @@ README.md~
 #README.md#
 .gitignore~
 data/.DS_Store
+.DS_Store
+gsp_cpu

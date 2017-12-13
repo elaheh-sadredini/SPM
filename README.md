@@ -16,17 +16,29 @@ You can set "Allow gap between itemsets" to "0" in order to mine the frequent co
 
 ## Input format:
 
--1 is a delimiter between itemsets.
-
--2 is a delimiter betweeen sequences.
-
--2 should be added to the last line.
-
 **Sample input file**
 
         1 2 -1 3 4 -1 -2
         5 6 -1 -2
         -2
+        
+'-1' is a delimiter between itemsets.
+
+'-2' is a delimiter betweeen sequences.
+
+'-2' should be added to the last line.
+        
+        
+        
+**Sample output file**
+
+        1-2--1-3
+        5--1
+
+
+'-' is a delimiter to separate items in one itemset (subsequence).
+'--' is a delimiter to separate itemsets in the sequence.
+
 
 
 ## Performance:

@@ -41,9 +41,9 @@ int main(int argc, char** argv) {
 	printf("\nExecution Total time ~ %f s\n", delta);
 	if(out_write){
 		fclose(outFile);
+        printf("\nAll frequent sequences are saved in finalFreqCand.txt\n\n");
 	}
 
-	printf("\nAll frequent sequences are saved in finalFreqCand.txt\n\n");
 	return 0;
 }
 

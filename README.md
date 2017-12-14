@@ -1,6 +1,6 @@
 # SPM
 
-This code implements sequential pattern mining using a breadth-frist-search algorithm. 
+This code implements sequential pattern mining (SPM) algorithm using a breadth-first-search approach. SPM finds the frequent subsequences in a given dataset of sequences. 
 
 
 ## Usage:
@@ -47,7 +47,7 @@ GPU and multi-thread CPU implementation of the code is available. Please contact
 
 
 ## Citations:
-Please consider to cite to the following papers if you are using this tool for your research. 
+Please cite the following papers if you are using this tool for your research. 
 
 [\[1\] Elaheh Sadredini, Reza Rahimi, Ke Wang, and Kevin Skadron. "Frequent Subtree Mining on the Automata Processor: Opportunities
 and Challenges." ACM International Conference on Supercomputing (ICS), Chicago, June 2017](http://www.cs.virginia.edu/~skadron/Papers/sadredini_ics17.pdf) 

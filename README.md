@@ -7,11 +7,10 @@ This code implements sequential pattern mining (SPM) algorithm using a breadth-f
 
 `1. make`
 
-`2. ./gsp_cpu <frequency> <input file> <Dumping results (yes = 1, No = 0)> <Allow gap between itemsets (yes = 1, No = 0)>`
+`2. ./gsp_cpu <frequency> <input file> <Dumping candidates (yes = 1, No = 0)> <Dumping results or frequent candidates (yes = 1, No = 0)> <Allow gap between itemsets (yes = 1, No = 0)>`
 
 
 You can set "Allow gap between itemsets" to "0" in order to mine the frequent consequtive itemsets. 
-
 
 
 ## Input format:

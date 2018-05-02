@@ -53,22 +53,22 @@ void run(int argc, char** argv) {
 
 	long double frequency;
 
-	if (argc != 5)
+	if (argc != 6)
 		usage(argc, argv);
 
 	if ((frequency = atof(argv[1])) <= 0)
 		usage(argc, argv);
 
 	inputFile = argv[2];
-	out_write = atoi(argv[3]);
-    gap_between_itemsets = atoi(argv[4]);
+	cand_write = atoi(argv[3]);
+	out_write = atoi(argv[4]);
+    gap_between_itemsets = atoi(argv[5]);
 	
 	if(out_write){
 	if ((outFile = fopen("finalFreqCand.txt", "w")) == NULL ) {
 		fprintf(stderr, "output file could not be open");
 		exit(1);
 	}}
-
 
 	readFile(inputFile);
 	frequencyNum = (numberOfSequences * frequency) + 0.99999;
@@ -155,7 +155,7 @@ void readFile(char* fileName) {
 }
 
 void usage(int argc, char** argv) {
-	fprintf(stderr, "Usage: %s <frequency> <input file> <Dumping results (yes = 1, No = 0)> <Allow gap between itemsets (yes = 1, No = 0)>\n",
+	fprintf(stderr, "Usage: %s <frequency> <input file> <Dumping candidates (yes = 1, No = 0)> <Dumping results or frequent candidates (yes = 1, No = 0)> <Allow gap between itemsets (yes = 1, No = 0)>\n",
 			argv[0]);
 	exit(1);
 }

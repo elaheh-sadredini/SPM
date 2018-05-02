@@ -74,14 +74,18 @@ void generateTwoLenghtFreqSeq()
 	//////////////////////////////////////////////
 	////////////Printing info/////////////////////
     int ii;
-	if(out_write){
-		//candFile = fopen("intermidiate-size2.txt", "w");
+	
+	if(cand_write){
+		if ((candFile = fopen("intermidiate-size2.txt", "w")) == NULL ) {
+		fprintf(stderr, "candidate File could not be open");
+		exit(1);
+	}}
 		
 		for (ii=0; ii<numberOfTowLengthCandidates; ii++){
 				char* cand = sequenceSignature(twoLengthCandidate[ii], 2);
-				//fprintf(candFile, "%s\n", cand);
+				fprintf(candFile, "%s\n", cand);
 		}
-		}
+
 		
 		
 	/* Candidate selection phase */
@@ -143,7 +147,7 @@ void generateTwoLenghtFreqSeq()
 				k++;
 			}
 			//printFrequentCandidateHashTable();
-    //if(out_write){
-	//fclose(candFile);
-	//}
+    if(cand_write){
+		fclose(candFile);
+	}
 }

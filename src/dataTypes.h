@@ -17,6 +17,7 @@
 FILE* outFile;
 FILE* candFile;
 int out_write;
+int cand_write;
 int gap_between_itemsets;
 
 struct items
